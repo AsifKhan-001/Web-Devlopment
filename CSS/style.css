@@ -1,7 +1,94 @@
+/*Tag Element selector*/
+/*
 h1{
     background-color: aquamarine;
 }
 
 h2{
     background-color: bisque;
+}*/
+
+
+
+
+
+
+/* Id base selction */
+/*
+#first{
+    background-color:darkcyan;
 }
+*/
+
+
+
+
+
+
+/* Class base selection */
+/*
+.third{
+    background-color: blanchedalmond;        
+}
+*/
+
+
+
+
+
+
+
+/* group based selection */
+/*
+h1 , #first , .third {
+    background-color: rgb(241, 178, 130);
+}       
+*/
+
+
+/*🛑4th place of the (255,355,255,Alpha) is Alpha which is opacity */
+/*🛑rgba(255,255,255,0.9) here a is the opacity */
+/*🛑hsla(Hue,Saturation,Lightness,Alpha) hue is 0-360   &   saturation in percentage like 50% etc...   &    Lightness in percentage like 0% for Black and 100% for white*/
+/*🛑Hexa Decimal form for color #RRGGBB , for Eg: #31c2f1 etc....*/
+
+
+
+
+
+
+h1{
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* here alot off comma sepertated fonts but apply any one this is due to when the first font is not applicable in any web then apply 2nd one ands similarly for more */
+    font-weight: 900;       /* font weight range from 100 to 900 and its for thickness of the font    */
+    font-style: italic;   
+}
+
+/* 🛑 if you would like to use the google fonts then you need to link that font in your HTML file and then apply in your css file okk*/
+
+ul{
+    font-size: 20px;
+}
+li{
+    font-size: 1em;     /* 1 means 1 times if there is 2 means 2 times and em means just in camparition of its parent , the parent is the a tag just above then this tag in case of li the ul is the parent of li okk , and 1em says its incrase the font 1 times of the ul , if there is 2em them increase the font size of the li 2 times of the ul GOT IT..  */
+}
+
+
+/* rem is root element which is HTML  so if HTML have the 40px and i give any element 2rem then this make this element 2 times of HTML font size */
+
+
+h2{
+    font-size: 9vw;      /* vm is the view to width its mean the width of the web page , if i write 2vw its make it 2% of the width of the web page  */
+}
+
+
+li{
+    font-size: 3vh; /* vh is the view of height its means the height of the web page and 3 means 3% of the web page height */
+}
+
+
+li{
+    font-size: 50%;      /* 50% is says that make the size of the li is 50% in camparision of the parent tag you seen it in preview the exersize child li is bigger in camparision to the Diet child li its due to the exercise is bigger size than diet size so its depend on the parent  */
+}
+
+
+
