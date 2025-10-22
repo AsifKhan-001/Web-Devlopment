@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> My media Website </h1>
+    <br>
+    <p>Take a break and listen the whole music and enjoy the video</p>
+    <br>
+    <p>Nadaaniyaa Song</p>
+    <br>
+    <audio src="Nadaaniyan Akshath 320 Kbps.mp3" controls ></audio>           <!-- this is the normal way for audio but not recommended for proper format see below-->
+    <br><br>
+    <video src="35859-408654153_small.mp4" controls height="300px"></video>      <!-- that's also a general way for the video but not reccommended for proper use see below-->
+
+    <br>
+    <hr/>
+    <p>reccommended method for audio & Video</p>
+    <br>
+    <p>AUDIO: </p>
+    <audio controls>                                                       
+        <source src="Nadaaniyan Akshath 320 Kbps.mp3" type="audio/mp3">        <!-- Here we can provide multiple audio like when first one not able to run then run the next source and similaly with each source but the first priority goes to first one , if no any source able to run then last text shown there -->        
+        your browser could not support this audio file.
+    </audio>
+
+    <br>
+    <p>VIDEO: </p>
+    <video controls height="300px">
+        <source src="35859-408654153_small.mp4" type="video/mp4" >             <!-- Here we can provide multiple video source like when first one not able to run then run the next source and similaly with each source but the first priority goes to first one , if no any source able to run then last text shown there-->
+        your browser could not support this video file.
+    </video>
+
+    <hr>
+    <p> Play the youtube video </p>
+    <br>
+    <iframe src="https://www.youtube.com/embed/mgTxgyRx94Q" allowfullscreen></iframe>          <!-- Try here paste the chrome link of any yt video and ust be remember 🛑 after the .com/ must write the /embed/ then yt video play otherwise not able to play okk ///// if you use here any share link of any youtube video then must be there is www.youtube.com NOT in short form like www.yout.be-->
+
+</body>
+</html>

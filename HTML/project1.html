@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>UNIVERSITY REGISTRATION FORM</h1>
+    <br>
+    <p>Please fill out the form below </p>
+    <hr>
+    <h2>Personal Details</h2>
+
+    <form>
+        <label for="first name"> First Name:</label>
+        <input type="text" name="userfirstname" id="first name" placeholder="e.g. Asif" required>     <!--placeholder make a faded text into the input box ///////  🛑required is actually doing that this field mandatory to fill -->
+        <br><br>
+        <label for="Last name"> Last name: </label>
+        <input type="text" name="userlastname" id="Last name" placeholder="e.g. Khan">
+        <br><br>
+        <label for="DOB">Date Of Birth:</label>
+        <input type="date" name="userDOB" id="DOB">
+        <br><br>
+        <label>Gender:</label>
+        <br><br>
+        <label for="male"> Male</label>
+        <input type="radio" name="usergender" id="male">
+        <br>
+        <label for="female"> FeMale</label>
+        <input type="radio" name="usergender" id="female">
+        <br>
+        <label for="other"> Other</label>
+        <input type="radio" name="usergender" id="other">
+
+        <br><br>
+        <label for="file">Upload your Photo: </label>
+        <input type="file" name="userfile" id="file">             <!--type = file make this file type box -->
+        <br><br>
+        <hr>
+        <br>
+        <h2>Contact Information</h2>
+        <label for="emailid"> E-Mail ID:</label>
+        <input type="email" name="useremailid" id="emailid" placeholder="e.g. asif12@gmail.com">
+        <br>
+        <br>
+        <label for="phone"> Phone No.</label>
+        <input type="number" name="userphoneno" id="phone" placeholder="e.g. 9965XXXXX">
+        <br><br>
+        <label for="Address"> Permanent Address:</label>
+        <br>
+        <textarea name="Address" id="Address" rows="10" cols="40"></textarea>                    <!-- If we required a area or box for more text also we can increase or modify thr rows and cols-->
+
+        <br><br>
+        <hr>
+
+        <h2> Acadmic Information</h2>
+        <br>
+        <label for="course"> Select your Course:</label>
+        <select name="course" id="course" placeholder="choose your course">                 <!-- select is like create a drop box to select the anythings which given in options-->
+            <option value="Choose your Course"> Choose your course below   </option>
+            <option value="CSE">CSE</option>               <!-- Option is the options in the given in dropbox-->
+            <option value="Mech">Mechanical</option>       <!-- vlue is give the this which is in value to the backend-->
+            <option vcalue="civil">Civil</option>
+
+        </select>
+
+        <h4>Additional course</h4>
+        
+        <label for="sports"> Sports</label>
+        <input type="checkbox" name="additional course" id="sports" value="sports">
+        <br>
+        <label for="dance"> Dance</label>
+        <input type="checkbox" name="additional course" id="dance" value="dance">
+        <br>
+        <label for="music"> Music</label>
+        <input type="checkbox" name="additional course" id="music" value="music">
+
+
+        <hr>
+
+        <button type="submit">Register</button>                  <!-- we use button rather <input type="submit" beacuse its help us to style in css-->  
+        <button type="reset"> Clear form</button>
+
+
+
+
+
+        
+
+    </form>
+
+
+</body>
+</html>

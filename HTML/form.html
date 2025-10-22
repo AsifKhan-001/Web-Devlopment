@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label for="name">Name:</label>                        <!-- Its add a label like Name : -->
+        <input type="text" name="username" id="name">         <!-- type is just make the form this section specific like this input only accept texts -->
+        <br><br>                                    <!-- Its make a gap between two inputs first br is goes to the next line for new input and second br make a sufficient gap between them-->
+        
+        <label for="age"> Age: </label>
+        <input type="number" name="userage" id="age">        <!-- name is a tag which always represent this data, that the this data is store in where in the backend-->
+        <br><br>
+
+        <label for="emailid">E-Mail ID: </label>
+        <input type="text" name="useremailid" id="emailid">       <!-- for and id is must be same and this is actually make a SYNC between label and input and its like when i click on the label then its automatically move to input of that &&&& must be for and id always same this is case sensitive too-->
+        <br><br>
+
+        <label for="password"> Password: </label>
+        <input type="password" name="userpassword" id="password">
+        <br><br>
+
+        <!-- the radio type : its a option type like select any one see in preview for more-->
+
+        <label> Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="usergender" id="male" value="male">         <!-- value is actually needed for th backend because when we select then gender its write on not actually gender so we pass value this save in backend -->
+        <label for="female">Female</label>
+        <input type="radio" name="usergender" id="female" value="female">
+        <label for="other">Other</label>
+        <input type="radio" name="usergender" id="other" value="other">
+
+        <br><br>
+
+        <label for="c++"> C++</label>
+        <input type="checkbox" name="syllabus" id="c++" value="C++">            <!-- Here we also need to pass a value for backend because in the chekbox or options ther is issue which is "on" so we pass a value which help to store the data in backend-->
+        <label for="java">Java</label>
+        <input type="checkbox" name="syllabus" id="java" value="Java">
+        <labal for="python">Python</labal>
+        <input type="checkbox" name="syllabus" id="python" value="Python">
+
+        <input type="submit">
+
+    </form>
+
+
+
+
+</body>
+</html>
