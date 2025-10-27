@@ -1,0 +1,15 @@
+#first{
+    background-color: antiquewhite;
+}
+
+#first{
+    background-color: aquamarine;      /* in these two cammand we work on the first id but the last one at the end apply*/
+}
+
+
+/*🛑 If we maek "!important" the one prioprity goes first and this will overwrite the everthing  inline css also */
+
+
+h1{
+    background-color: bisque !important;
+}

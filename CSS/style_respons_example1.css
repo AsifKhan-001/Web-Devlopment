@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 200px;
+    width: 800px;
+    background-color: rgb(9, 71, 138);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);         /* this repeat is 4 times 1fr*/
+    grid-template-rows: 1fr;
+    gap: 5px;
+    
+}
+img{
+    height: 100%;
+    width: 100%;
+
+}
+@media screen and (max-width:900px) {
+    .container{
+        height: 140px;
+        width: 600px;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 2fr;
+    }
+        
+    
+}
+@media screen and (max-width:600px) {
+    .container{
+        height: 90px;
+        width: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}

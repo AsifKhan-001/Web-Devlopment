@@ -1,0 +1,45 @@
+h1{
+    background-color: rgba(111, 246, 246, 0.572);
+    height: 40px;
+    width: 295px;
+    /*
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(42, 101, 212);
+    */
+    /* 🛑 we can replace above three line of code by this one line not neccessary same order */
+    border: 3px solid rgb(100, 100, 219);
+    padding: 10px;
+    margin: 10px;
+
+    /* if you want the padding according to me, TOP -> RIGHT -> BOTTOM -> LEFT */
+    padding: 10px 40px 30px 50px;     /* itd like first one is for TOP then RIGHT then BOTTOM and then LEFT 🛑 similarly with margin*/
+    border-radius: 10px;             /* that's for the boundary curve */
+    display: inline-block;
+    box-sizing: content-box;    /* Now here i give says box sizing is just content boundary and padding and margin NOT included */
+    
+}
+
+h3{
+    margin: 12px;
+    display: inline-block;
+}
+.my{
+    background-color: rgba(247, 247, 124, 0.522);
+    border: 5px solid rgb(151, 195, 225);
+    padding: 15px;
+    margin: 10px;
+    /* display: inline;  */        /* 🛑this display inline can change any header or any tag into inline and inline have divverent property for more read the Saniya Khan notes or read the docs of yt.*/
+    display: inline-block;         /* Inline block make any block inline i mean give the all features of the inline to this block like just after ind with any inline block then just side of this start from there see this in live server not in preview*/
+    box-sizing: border-box;        /* Box sizing now its cover the whole box means the main content portion and the padding and margin all are count within the size of box content if i give height and width 300px then its not only for content its for whole upto boundary*/
+}
+
+
+/* Work on span and anchor tag*/
+
+span{
+    color: blue;       /*See there the span tag selected word or words are in color of blue*/
+    font-style: italic;
+    font-size: large;
+    
+}

@@ -1,0 +1,45 @@
+.container{          /*🛑 Parent*/
+    background-color: aliceblue;        /* Container is the parent of the first second third and fourth so if i want to set any layout like flex then this cammand give the parent and the particular item*/
+    display: flex;                       /* flex set the box like horizontal one by one in horizontal row that's bydefault but we can change it*/
+    height: 300px;
+    flex-direction: row;             /* this help us to change the diretion of the flex like horizontal order -- row, or vertical order. ---  column */
+    /*🛑 There is more options in justify-content: like center its help us the arrange anything in center with the help of align-items: center; */
+    justify-content: center;     /* This is set the arrangement like "space-around" this make the seperation equally between all , "space-between" is  maake the first and last the the start and end corner and make the equally distance among all , "space-evenly" is this make evenly / equally seperation between all */
+    /* 🛑justify content work around main axis & main axis is the axis where the flex direction marked and just perpendicular axis is the Cross-axis okk like x-axis is main axis then y-axis is the cross axis*/
+
+    align-items: center;      /* align-items: work on the cross-axis , there is more like end , center etc...*/
+    flex-wrap: wrap;          /* flex-wrap: is make our web page more responsive when the dimenstion goes to small then this will move to below */
+
+    gap: 20px;     /* Its make a gap between these flex box*/
+
+
+
+}   
+
+.box{
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    /* margin: 5px; */
+
+}
+
+.first{    /* 🛑 Childs*/
+    
+    background-color: burlywood;
+    flex-basis: 200px;    /* if change the length about the main axis not actually width or hight  of the flex if i menstion any width then its overwrite this */
+    flex-grow: 1;        /* flex-grow: its doing to incrase the width to fit properly in whole screen , by default all have flex-grow: is 0; &&& More flex-grow numeric value then more the width /// its destribute width by pixels sharing 1 means one part of the whole pixels and 2 means two parts of the whole pixels*/
+}
+.second{
+    background-color: brown;
+    flex-grow: 2;
+}
+.third{
+    background-color: cadetblue;
+    flex-shrink: 4;     /* flex shrink is when the web page shrink then how fast its shrink camparition to other bydefault its value is 1 and if i give 4 then its 4 times faster shrink than the others*/
+    align-self: flex-start;     /* Its break the flow of the flex and followw this instruction here this done the third to upward rather in centre*/
+    
+}
+.fourth{
+    background-color: blueviolet;
+}

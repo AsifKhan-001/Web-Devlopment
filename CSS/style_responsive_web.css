@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{            /* this is bydefault*/
+    height: 800px;
+    width: 800px;
+    background-color: brown;
+    font-size: 40px;
+}
+
+@media screen and (max-width:600px) {      /* 🛑This is the media tag which make our screen/web responsive this says her if the maximum width [ max-width: here means maximum is less than or equal to 600ps] is 600px then chnages something according to below menstion like change background color font size */
+    .container{
+        background-color: bisque;
+        font-size: 20px;
+        height: 300px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width:800px){      /* 🛑 her min-width: its means Greater than or equal to the 800px*/
+    .container{
+        background-color: aqua;
+        font-size: 100px;
+        height: 1200px;
+        width: 1100px;
+    }
+}

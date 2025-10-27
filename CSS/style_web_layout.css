@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: aliceblue;
+}
+
+.container{
+    display: grid;
+    height: 800px;
+    width: 800px;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.box{
+    background-color: rgb(229, 159, 20);
+}
+
+.header{
+    grid-column-start: 1;      /* this make a particular GRID this start from which column  ////.    here indexing from 1 not 0 */
+    grid-column-end: 4;        /* this make a particular GRID where this end the grid at which column*/
+    background-color: purple;
+    border-radius: 7px;
+
+}
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: brown;
+    border-radius: 7px;
+}
+.content1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: cadetblue;
+    border-radius: 7px;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(15, 91, 7);
+    border-radius: 7px;
+}
+
+
+
+

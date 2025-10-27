@@ -1,0 +1,72 @@
+/*🛑 For better understanding read the W3 notes on internate on this topic*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    padding: 20px;
+    position: relative;
+}
+
+.box{
+    height: 100px;
+    width: 150px;
+    background-color: rgb(224, 29, 29);
+    animation-name: moving;           /*here i am give the my animation element a name*/
+    animation-duration: 5s;
+    animation-iteration-count: infinite;       /*comment: this is for how number of times animation perform*/
+    animation-timing-function: ease-in;        /* this give the command how fast it need to move like in easr in first slow thwn fast  more knowlege wo need to go W3 notes*/
+    /* animation-direction: alternate;            comment:this is like repeat the animation in both direction like first go and then follow this same animation pattern to reach back its originial position in same  */
+    animation-delay: 2s;                       /*to open this web start animation after 2sec */
+    /* animation-fill-mode: forward;            comment :we need to apply this to when itration is equal to 1 , this exactly like if we pass forward then its retail its position at the end end of the frame and if backward then its retain its positio intial frame for. more read on internet */
+    
+    
+    
+    position: absolute;                       /* We must need to give the postion absolute the box and position relative to the container or parent*/
+}
+
+@keyframes moving {          /* Here i access my animation portion by its name*/
+    /* from{                  comment: this section is before the animation how this look and work in the begginig
+        background-color: chocolate;
+        top: 10px;
+        left: 10px;
+    } */
+    /* to{                  comment: this section is after the animation how this look and work at the end
+        background-color: blue;
+        top: 10px;
+        left: 1000px;
+
+    } */
+
+    /*🛑 Here we use the from and to but we can use in form of percentage */
+
+    0%{                                    /* at starting      /////    for infinite cycle comment the animation directionand also comment the fill mode and iteration count infinite*/
+        background-color: chocolate;
+        top: 10px;
+        left: 10px;
+    }
+    25%{                                  /* 1/4 th of the animation */
+        background-color: chartreuse;
+        top: 10px;
+        left: 900px;
+    }
+    50%{
+        background-color: blue;
+        top: 600px;
+        left: 900px;
+    }
+    75%{
+        background-color: floralwhite;
+        top: 600px;
+        left: 10px;
+    }
+    100%{
+        background-color: magenta;
+        top: 10px;
+        left: 10px;
+    }
+}

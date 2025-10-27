@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+body{
+    display: flex;
+    height: 100vh;                 /*Thats nacessary to move any element in centre */
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(6, 170, 252);
+    /* box-shadow: 0px 0px 30px 7px rgb(253, 106, 2);            🛑here first 10px is offset in x  if i want in opposite side of x use -10px ,similarly with y and second 10px is for offset in y , the third one is blur on shadow , fourth one is Spread Radius and spread radius is like its increase the shadow in all direction and its seems like a border but its increase it self its not depend the postion and next one is color */
+    /* box-shadow: inset 10px 10px;                its little different to the simply the normal values inset is doing like not shift its increase as the original position not shift in x and y like x and y offset  */
+    /* border-radius: 50%; */
+    overflow: scroll;          /* when our content overflow to that container we make it scroll to access and we can also give here is hidden that's the hide the all content of the overflow*/
+}
+
+

@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: aliceblue;
+}
+
+.container{
+    display: grid;
+    height: 800px;
+    width: 800px;
+    background-color: blanchedalmond;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px;
+    padding: 10px;
+}
+
+.box{
+    background-color: brown;
+}
+.first{
+    grid-row: 1/4;       /* here i do 1/4 , start row with 1 and end with 4.  ///// and must remeber her +1 rule follow like if row is 3 then i put end row is 4 similarly with column*/
+    background-color: rgb(30, 70, 57);
+}
+.second{
+    grid-column: 2/4;
+}
+/* .fourth{
+    grid-row: 2/3;
+}
+.fifth{
+    grid-row: 2/3;
+} */
+.sixth{
+    grid-row: 2/4;      /* her if we pass only grid row then the column position missmatch and column shift anywhere due to available the position, so we need to pass the column position also to fix the correct position */
+    grid-column: 4/5;
+}

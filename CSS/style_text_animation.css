@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.container{
+    background-color: rgb(232, 217, 217);
+    border: 1px solid rgb(163, 122, 122);
+    font-size: 50px;
+    padding: 10px;
+    color: cornflowerblue;
+    width: 70%;
+    border-radius: 5px;
+    white-space: nowrap;         /* when we need text in one line not gone automatically to next line*/
+    overflow: hidden;
+    animation-timing-function: linear;
+
+}
+
+p{
+    animation-name: movingtext;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movingtext{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: -180%;         /* Its when 0% then stop at the starting of container but when -100% then its cross the starting and hide inside and make. a infinite loop*/
+    }
+}

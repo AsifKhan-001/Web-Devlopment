@@ -1,0 +1,19 @@
+#mydiv{
+    height: 300px;
+    width: 500px;
+    background-color: aliceblue;
+    position: relative;               /* we put relative due to below abosult refre it because that the parent of the absolute below*/
+    
+}
+
+#circle{
+    height: 190px;
+    width: 190px;
+    background-color: crimson;
+    border-radius: 190px;
+    position: absolute;
+    top: 55px;                     /* 🛑 to move this position to centre Top = ( Height of this back white background in short mydiv   -    Height of this red circle in short circle ) Divide by 2.      */
+    left: 155px;                   /* 🛑 to move this position to centre left = ( width of this back white background in short mydiv   -    width of this red circle in short circle ) Divide by 2.      */
+    
+    
+}

@@ -1,0 +1,47 @@
+/* *{                     /* this is the "select all" */
+/*    margin: 0px;
+/*    padding: 0px;
+/*} */
+
+h1{
+    position: relative;
+    top: 1000px;
+}
+
+h2{
+    position: relative;      /* its RELATIVELY CHANGE ITS POSITION*/
+    left:  10px;            /* 🛑 Relative have a property when we change any element by relative  then the old position of that element is always RESERVE no one can get this old position BUT /////.  BUT this is not happen with the "absolute" in case of absolute the old position can get by any one */
+    bottom: 5px;
+    right: 67px;
+    top: 500px;
+
+}
+
+#My_para{
+    background-color: rgb(4, 243, 168);
+    position:fixed;   /* This is the fixed means that totally at that position never move from this position  ////  see in preview when i scroll down then you can see this fixed is not moving with scroll */
+    top: 50px;        /* its means move to it top most point */
+    z-index: 10;   /* this z-index move the forward any backward elemen just see in preview of this lorem para        ////. by default all above z-index 0 okk  , which have more z - index value which comes forward */
+
+}
+
+
+h4{
+    background-color: blanchedalmond;
+    position: sticky;        /* Sticky is actually doing that its just.  //// sticky work when the below have some para or codes in html otherwise not work */
+    top: 0px;
+}
+
+/* #para{
+    position: relative;
+    top: 50px
+} */
+
+h5{
+    background-color: rgb(240, 158, 247);
+    position: absolute;
+    
+    top: 0px;       /* This adjust its position with respect to the div okk*/
+}
+
+

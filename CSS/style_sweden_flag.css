@@ -1,0 +1,23 @@
+#container{
+    height: 300px;
+    width: 550px;
+    background-color:rgb(25, 75, 238);
+    position: relative;
+
+    
+}
+#line1{
+    height: 300px;
+    width: 65px;
+    background-color: gold;
+    position: absolute;
+    left: 150px;
+}
+
+#line2{
+    height: 65px;
+    width: 550px;
+    background-color: gold;
+    position: absolute;
+    top: 117.5px;
+}

@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;     /* Here 1fr give one fraction , give one pard of that fraction and total grid is 1fr+1fr=2fr so give one portion of that 2 fraction*/
+    grid-template-columns: 1fr 1fr;  /* we also pass the px value but there is this overflow from the grid*/
+    gap: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(37, 26, 46);
+    padding: 5px;
+    margin: 4px;
+}
+.first{
+    background-color: coral;
+}
+.second{
+    background-color: cornflowerblue;
+}
+.third{
+    background-color: rgb(90, 15, 30);
+}
+.fourth{
+    background-color: rgb(21, 120, 120);
+}
