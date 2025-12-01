@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(237, 193, 82);
+    box-sizing: border-box;
+}
+
+.container{
+    height: 300px;
+    width: 500px;
+    background-color: cornflowerblue;
+    
+}

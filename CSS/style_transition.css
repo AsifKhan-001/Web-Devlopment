@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    perspective: 800px;
+    
+}
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(213, 122, 10);
+    /* transition-property: all;    comment: you use all to apply transition on all then no need to use for width and height
+    transition-duration: 0.5s; */
+    /* transition-property: width;
+    transition-duration: 0.5s;
+    transition-property: height;
+    transition-duration: 0.5s; */
+    /* transition-timing-function: ease-in;
+    transition-delay: 0.3s; */
+    /*transition: all 1s ease-in 0s;*/    /* here we can do directly first value for where aapply 2nd for duration 3rd is effect and 4th is delay*/
+    /* transition: all 1s; */
+    animation-name: moving;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.box:hover{
+    background-color: rgb(247, 153, 39);
+    height: 140px;
+    width: 140px;
+    cursor: pointer;
+    border-radius: 4px;
+    /* transform: translateZ(100px) */
+    animation-name: moving;
+
+
+    
+}
+
+@keyframes moving{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+
+}

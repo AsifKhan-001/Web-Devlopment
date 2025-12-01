@@ -1,0 +1,6 @@
+/* when you try the external font then download file and extract it and install or install for all user and directly usee that font name in fant family function */
+
+h1{
+    font-family: San Miguel;    /*this font i download and install in mac then i use directly by the name of this folder */
+    font-size: 200px;
+}
