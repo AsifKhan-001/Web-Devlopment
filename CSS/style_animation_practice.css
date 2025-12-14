@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+#main{
+    
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+
+    
+}
+nav{
+    margin: 20px auto;
+    height: 50px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(2.15);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    top: 0;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    border-radius: 5px;
+    
+    /* z-index: 5; */
+    
+    color: rgb(255, 255, 255);    
+}
+#mynav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+h3{
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+#animate_capsule{
+    left: -28px;
+    top: 50%;
+    /* transform: translateX(-50%); */
+    transform: translateY(-50%);
+    
+
+    position: absolute;
+    background-color: black;
+    height: 35px;
+    width: 150px;
+    
+    border-radius: 10px;
+    transition: left 0.5s ease-in 0s;
+
+}
+#FProject:hover ~ #animate_capsule{
+    left: 172px;
+}

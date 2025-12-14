@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(135, 0, 0);
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(234, 173, 173);
+    /* display: flex;
+    align-items: center; */
+    
+    
+}
+
+#page2 h1{
+    font-size: 35vw;
+    font-weight: 600;
+    
+    
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(224, 66, 66);
+}
+
+
+
+/* 🔸 the below is for image scroll pin */
+/* #page1{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(196, 144, 75);
+    
+}
+#page2 img{
+    height: 100%;
+    width: 20%;
+    position: relative;
+    
+    left: 50%;
+    transform: translateX(-50% );
+    object-fit: cover;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(99, 70, 32);
+} */

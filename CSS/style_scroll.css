@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    
+    background-color: antiquewhite;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    
+}
+#scroll{
+    display: flex;
+    
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+h3{
+    flex-shrink: 0;
+    height: 300px;
+    width: 50%;
+    background-color: cadetblue;
+    border: 2px solid black;
+    border-radius: 2%;
+    gap: 5px;
+
+}
+#scroll::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+    
+}
+#scroll::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
