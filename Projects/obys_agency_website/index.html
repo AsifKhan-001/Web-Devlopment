@@ -24,12 +24,12 @@
         <div class="line">
             <div id="line1-part1">
                 <h5>00</h5>
-                <h6>-</h6>
+                <h6 id="myi">-</h6>
                 <h6>100</h6>
             </div>
-            <h1>Your</h1>
+            <h1 id="your">Your</h1>
         </div>
-        <div class="line">
+        <div class="line" id="mylines">
             <h1>Web Experiences</h1>
         </div>
         <div class="line">
@@ -40,14 +40,14 @@
     </div>
     <div id="main">
         <div id="page1" data-scroll>
-            <div id="nav">
+            <nav id="nav">
                 <img id="logo" src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/762039/5cfa1bb7c9d96918028143.jpg" alt="logo">
-                <div id="nav-part2">
+                <div class="mynav-text" id="nav-part2">
                     <h4>Works</h4>
                     <h4>About</h4>
                     <h4>Contacts</h4>
                 </div>
-            </div>
+            </nav>
             <div class="hero" id="hero1">
                 <h1>we design</h1>
             </div>
@@ -67,9 +67,9 @@
             </div>
             <img id="flag" src="https://obys.agency/wp-content/uploads/2022/03/Flag.jpg" alt="">
         </div>
-        <div id="page2" data-scroll data-scroll-speed="-2.5">
+        <div id="page2" data-scroll >
             
-            <div id="video-container">
+            <div id="video-container" data-scroll-speed="-2.5">
                 <div id="video-crsr">
                     <i class="ri-play-fill"></i>
                 </div>
@@ -79,10 +79,11 @@
             </div>
 
         </div>
-        <div id="page3" data-scroll data-scroll-speed="-2.5">
-            <h1>OUR PROJECTS</h1>
+        <div id="page3" data-scroll >
+            <h1 data-scroll-speed="-4">OUR PROJECTS</h1>
             <div class="underline5"></div>
-            <div id="image-div-container">
+            <div id="image-div-container" data-scroll-speed="-2.5">
+                
                 <div class="image-div" id="image-div1">
                     <img src="./Assest/img1-1.jpg" alt="">
                     <img src="./Assest/img1-2.jpg" alt="">
@@ -129,7 +130,7 @@
                     <img src="./Assest/img4-2.jpg" alt="">
                 </div>
 
-                <div id="last-circle">
+                <div id="last-circle" data-scroll-speed="-2">
                     <h5>All Projects(18)</h5>
                 </div>
                 <!-- <div class="image-div" id="image-div2">
@@ -152,8 +153,8 @@
             </div>
 
         </div>
-        <div id="page4" data-scroll data-scroll-speed="-2.5">
-            <div id="page4-content">
+        <div id="page4" data-scroll >
+            <div id="page4-content" data-scroll-speed="-2.5">
                 <h1>About Obys</h1>
                 <div class="underline"></div>
                 <p>
@@ -198,34 +199,34 @@
                 
             </div>
         </div>
-        <div id="page5" data-scroll data-scroll-speed="-2.5">
-            <div class="movingtext" id="textmove1">
+        <div id="page5" data-scroll >
+            <div class="movingtext" id="textmove1" data-scroll-speed="-2.5">
                 <h1>— FASHION — <span>SPORT</span> — TECHNOLOGY — <span>FASHION</span> —</h1>
                 <h1>FASHION — <span>SPORT</span> — TECHNOLOGY — <span>FASHION</span> —</h1>
             </div>
-            <div class="movingtext2" id="textmove2">
+            <div class="movingtext2" id="textmove2" data-scroll-speed="-2.5">
                 <h1>— ARCHITECTURE — <span>BEAUTY</span> — REAL ESTATE — <span>ARCHITECTURE</span> —</h1>
                 <h1>ARCHITECTURE — <span>BEAUTY</span> — REAL ESTATE — <span>ARCHITECTURE</span> —</h1>
             </div>
-            <div class="movingtext" id="textmove3">
+            <div class="movingtext" id="textmove3" data-scroll-speed="-2.5">
                 <h1>— TRAVEL — <span>SCIENCE</span> — PARTNERS — <span>TRAVEL</span> —</h1>
                 <h1>TRAVEL — <span>SCIENCE</span> — PARTNERS — <span>TRAVEL</span> —</h1>
             </div>
-            <div class="movingtext2" id="textmove4">
+            <div class="movingtext2" id="textmove4" data-scroll-speed="-2.5">
                 <h1>— HOTELS — <span>MUSIC</span> — AUTOMOTIVE — <span>HOTELS</span> —</h1>
                 <h1>HOTELS — <span>MUSIC</span> — AUTOMOTIVE — <span>HOTELS</span> —</h1>
             </div>
         </div>
-        <div id="footer" data-scroll data-scroll-speed="-2.5">
-            <div id="lets">
+        <div id="footer" data-scroll >
+            <div id="lets" data-scroll-speed="-2.5">
                 <h1>LET'S CREATE</h1>
                 <h2>LET'S CREATE</h2>
                 <i class="ri-arrow-right-line"></i>
             </div>
             
             <div class="underline3"></div>
-            <div id="footer-div">
-                <div class="box" id="box1">
+            <div id="footer-div" data-scroll-speed="-2.5">
+                <div class="box" id="box1" data-scroll-speed="-2.5">
                     <h6>Social</h6>
                     <h5>Dribble</h5>
                     <h5>Behance</h5>
@@ -234,20 +235,20 @@
                     <h5>Twitter</h5>
                     <h5>Youtube</h5>
                 </div>
-                <div class="box" id="box2">
+                <div class="box" id="box2" data-scroll-speed="-2.5">
                     <h6>Address</h6>
                     <h5>Originally from New Delhi</h5>
                     <h5>working globally</h5>
                 </div>
-                <div class="box" id="box3">
+                <div class="box" id="box3" data-scroll-speed="-2.5">
                     <h6>Say Hi!</h6>
-                    <h5>asifkhanXYZ@gmail.com</h5>
+                    <h5>asifkhan882609@gmail.com</h5>
                 </div>
                 
             </div>
-            <div class="underline4"></div>
-            <div id="mytext">
-                <h4>Obys Agency © 2025</h4>
+            <div class="underline4" data-scroll-speed="-2.5"></div>
+            <div id="mytext" data-scroll-speed="-2.5">
+                <h4>Asif Khan © 2025</h4>
             </div>
         </div>
     </div>
